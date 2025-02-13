@@ -81,6 +81,11 @@ quit
 
 *Через redis-cli достаньте все записанные ключи и значения из базы, приведите скриншот этой операции.*
 
+```
+sudo apt install redis
+sudo systemctl status redis
+```
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img3.1.png)
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже разобраться в материале.
@@ -90,3 +95,17 @@ quit
 Запишите в Redis ключ key5 со значением типа "int" равным числу 5. Увеличьте его на 5, чтобы в итоге в значении лежало число 10.  
 
 *Приведите скриншот, где будут проделаны все операции и будет видно, что значение key5 стало равно 10.*
+```
+redis-cli
+scan 0
+set test 5
+exists test
+get test
+incrby test 5
+get test
+type test
+ttl test
+flushall
+exit
+```
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.1.png)
