@@ -49,10 +49,30 @@ sudo systemctl status memcached
 
 ### Задание 3. Удаление по TTL в Memcached
 
-Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5. 
+Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5.   
 
-*Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.*
+*Приведите скриншот, на котором видно, что спустя 5 секунд ключи удалились из базы.*  
 
+### Записано три ключа 2 ключа с TTL 100, третий 5. При проверке третий ключь удалился первым, первый и второй удалились через 100 секунд.  
+```
+telnet localhost 11211
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+add key1 1 100 4
+add key2 1 100 4
+add key3 1 5 4
+get key3
+get key1
+get key2
+get key1
+get key2
+get key3
+quit
+```
+*Скрин*  
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img2.1.png)
 ---
 
 ### Задание 4. Запись данных в Redis
