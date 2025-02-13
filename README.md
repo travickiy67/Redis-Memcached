@@ -96,7 +96,7 @@ get test1
 get test2
 exit
 ```
-![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img3.2.png)
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.2.png)
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже разобраться в материале.
 
@@ -119,3 +119,4 @@ flushall
 exit
 ```
 ![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.1.png)
+
