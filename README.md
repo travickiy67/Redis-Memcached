@@ -42,6 +42,9 @@ memcached -V
 sudo systemctl status memcached
 
 ```
+*Скрин*
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img1.1.png)
 ---
 
 ### Задание 3. Удаление по TTL в Memcached
