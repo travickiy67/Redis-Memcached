@@ -1,3 +1,4 @@
+# Травицкий Сергей
 # Домашнее задание к занятию «Кеширование Redis/memcached»
 
 ### Инструкция по выполнению домашнего задания
@@ -60,8 +61,11 @@ Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
 add key1 1 100 4
+test
 add key2 1 100 4
+test
 add key3 1 5 4
+test
 get key3
 get key1
 get key2
@@ -73,7 +77,18 @@ quit
 *Скрин*  
 
 ![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img2.1.png)
+
+#### Через docker, первый ключ с ttl 0
+*Скрин 1*
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img3.2.png)
+
+*Скрин 2*
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img3.3.png)
+
 ---
+
 
 ### Задание 4. Запись данных в Redis
 
@@ -90,6 +105,7 @@ sudo systemctl status redis
 
 #### Комманды
 ```
+redis-cli
 scan 0
 set test1 100
 set test2 1000
@@ -101,6 +117,17 @@ exit
 *Скрин*  
 
 ![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.2.png)
+
+#### Через docker
+
+*Скрин 1*
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.3.png)
+
+*Скрин 2*
+
+![image](https://github.com/travickiy67/Redis-Memcached/blob/main/img/img4.4.png)
+
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже разобраться в материале.
 
